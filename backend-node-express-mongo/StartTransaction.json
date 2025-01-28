@@ -1,0 +1,53 @@
+userWithPlaces {
+  _id: new ObjectId("678a72f906da95b92d8d1eed"),
+  name: 'Hema',
+  email: 'hema@test.com',
+  password: 'hema@123',
+  image: 'https://live.staticflickr.com/7631/26849088292_36fc52ee90_b.jpg',
+  places: [
+    {
+      location: [Object],
+      _id: new ObjectId("678a8268bc89802421c0e49a"),
+      title: 'Bangalore Empire State Building ',
+      description: 'One of the most famous sky scrapers in the world!',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/400px-Empire_State_Building_%28aerial_view%29.jpg',
+      address: '20 W 34th St, New York, NY 10001',
+      creator: new ObjectId("678a72f906da95b92d8d1eed"),
+      __v: 0
+    },
+    {
+      location: [Object],
+      _id: new ObjectId("678a8385bc89802421c0e49f"),
+      title: 'Sittart Empire State Building ',
+      description: 'One of the most famous sky scrapers in the world!',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/400px-Empire_State_Building_%28aerial_view%29.jpg',
+      address: '68B Sittard, Netharlands',
+      creator: new ObjectId("678a72f906da95b92d8d1eed"),
+      __v: 0
+    }
+  ],
+  __v: 4
+}
+
+
+place {
+  location: { lat: 40.7484474, lng: -73.9871516 },
+  _id: new ObjectId("678a8268bc89802421c0e49a"),
+  title: 'Bangalore Empire State Building ',
+  description: 'One of the most famous sky scrapers in the world!',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/400px-Empire_State_Building_%28aerial_view%29.jpg',
+  address: '20 W 34th St, New York, NY 10001',
+  creator: {
+    _id: new ObjectId("678a72f906da95b92d8d1eed"),
+    name: 'Hema',
+    email: 'hema@test.com',
+    password: 'hema@123',
+    image: 'https://live.staticflickr.com/7631/26849088292_36fc52ee90_b.jpg',
+    places: [
+      new ObjectId("678a8268bc89802421c0e49a"),
+      new ObjectId("678a8385bc89802421c0e49f")
+    ],
+    __v: 4
+  },
+  __v: 0
+}
